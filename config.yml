@@ -10,10 +10,14 @@ engine:                      # engine settings
     enabled: true           # activate polyglot book
     book:
       standard: # list of book file paths for variant standard
+        - Aaricia_2012.bin
         - komodo.bin
         - elo3300.bin
-        - bestbook.bin
-        - network.bin
+        - CerebellumNN.bin
+        - tcec.bin
+        - ccc.bin
+        - infinitychess.bin
+        - ccc.bin
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
@@ -26,12 +30,12 @@ engine:                      # engine settings
  
 option name Contempt type spin : 24
 option name Analysis Contempt type combo : Both var Off var White var Black var Both
-option name Threads type spin : 8
-option name Hash type spin : 512
+option name Threads type spin : 512
+option name Hash type spin : 32768
 option name Ponder type check : false
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 5000
+option name Move Overhead type spin : 1000
 option name Slow Mover type spin : 10
 option name nodestime type spin : 0
 option name UCI_Chess960 type check : false
@@ -43,6 +47,13 @@ option name SyzygyPath type string : <empty>
 option name SyzygyProbeDepth type spin : 100
 option name Syzygy50MoveRule type check : true
 option name SyzygyProbeLimit type spin : 7
+option name OwnBook type check : true
+option name BookFile type string : Aaricia_2012.bin
+option name BookFile 2 type string : CerebellumNN.bin
+option name BookFile 3 type string : komodo.bin
+option name BookFile 4 type string : elo3300.bin
+option name BestBookMove type check : true
+option name BookDepth type spin : 255
 option name Use NNUE type check : true
 option name EvalFile type string : nn-62ef826d1a6d.nnue
 
