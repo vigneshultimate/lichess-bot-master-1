@@ -47,7 +47,7 @@ option name SyzygyPath type string : <empty>
 option name SyzygyProbeDepth type spin : 100
 option name Syzygy50MoveRule type check : true
 option name SyzygyProbeLimit type spin : 7
-option name OwnBook type check : true
+option name OwnBook type check : false
 option name BookFile type string : Aaricia_2012.bin
 option name BookFile 2 type string : CerebellumNN.bin
 option name BookFile 3 type string : komodo.bin
