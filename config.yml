@@ -18,6 +18,8 @@ engine:                      # engine settings
         - ccc.bin
         - infinitychess.bin
         - ccc.bin
+        - bestbook.bin
+        - network.bin
 #      atomic: # list of book file paths for variant atomic
 #      etc.
 #      use the same pattern for giveaway, crazyhouse, horde, kingofthehill, racingkings, 3check as well
@@ -35,7 +37,7 @@ option name Hash type spin : 32768
 option name Ponder type check : false
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 1000
+option name Move Overhead type spin : 2000
 option name Slow Mover type spin : 10
 option name nodestime type spin : 0
 option name UCI_Chess960 type check : false
